@@ -277,3 +277,21 @@ ON a.s_id=b.s_id
 
 
 
+
+
+
+# 修改數據 語法記錄
+
+修改學員的姓名，帶了條件
+```sql
+UPDATE `student` SET `name`='chichi' WHERE id=1;
+```
+
+不指定條件的情況下，會改動表中所有的數值
+```sql
+UPDATE `student` SET `name`='chichi';
+```
+
+```sql
+UPDATE `student` SET `name`='ivesshe',`email`='ivesshe@gmail.com' WHERE id=1;
+```
