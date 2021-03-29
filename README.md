@@ -127,7 +127,7 @@ WHERE a.s_score>b.s_score
 ```sql
 SELECT s_id,AVG(s_score)
 FROM score
-GROUP BY s_id HAVING AVG(s_score)
+GROUP BY s_id HAVING AVG(s_score)>60
 ```
 
 ## 執行結果
